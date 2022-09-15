@@ -1,0 +1,176 @@
+@media only screen and (max-width: 599px) {
+    .header1 {
+        position: relative;
+        width: 320px;
+        height: 124px;
+        z-index: 5;
+    }
+    .diag {
+        position: relative;
+        height: 70px;
+        width: 320px;
+        background-color: #1e1e7c;
+        z-index: 2;
+    }
+    #titulo {
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        float: left;
+        margin-top: 8px;
+        text-align: center;
+        padding-top: 1em;
+        width: 100%;
+        height: 60px;
+    }
+    #img_header1 {
+        position: relative;
+        background-size: 100%;
+        background-image: url(../media/imagenes/img_header1_d.svg);
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 54px;
+        z-index: 3;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+    .header1 {
+        zoom: 0.8;
+    }
+    .diag {
+        position: absolute;
+        height: 75px;
+        width: 768px;
+        -webkit-box-shadow: 0px 5px 5px -2px #888;
+        box-shadow: 0px 5px 5px -2px #888;
+        z-index: 2;
+    }
+    .forma {
+        position: absolute;
+        width: 420px;
+        height: 75px;
+        background-color: #1e1e7c;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(-33deg);
+        -o-transform: skew(-25deg);
+        -ms-transform: skew(-25deg);
+        z-index: -5;
+    }
+    #titulo {
+        font-family: 'CorisandeBold';
+        font-size: 18px;
+        color: #FFFFFF;
+        float: left;
+        margin-top: 12px;
+        margin-left: 15px;
+        text-align: center;
+        width: 210px;
+        height: auto;
+    }
+    #img_header1 {
+        position: absolute;
+        background-size: 100%;
+        background-image: url(../media/imagenes/img_header1_d.svg);
+        background-repeat: no-repeat;
+        width: 466px;
+        height: 75px;
+        margin-left: 300px;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 751px) and (max-width: 960px) {
+    .header1 {
+        position: relative;
+        width: 768px;
+        height: 75px;
+        z-index: 5;
+    }
+    .diag {
+        position: absolute;
+        height: 75px;
+        width: 768px;
+        -webkit-box-shadow: 0px 5px 5px -2px #888;
+        box-shadow: 0px 5px 5px -2px #888;
+        z-index: 2;
+    }
+    .forma {
+        position: absolute;
+        width: 420px;
+        height: 75px;
+        background-color: #1e1e7c;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(-33deg);
+        -o-transform: skew(-25deg);
+        -ms-transform: skew(-25deg);
+        z-index: -5;
+    }
+    #titulo {
+        font-family: 'CorisandeBold';
+        font-size: 18px;
+        color: #FFFFFF;
+        float: left;
+        margin-top: 12px;
+        margin-left: 15px;
+        text-align: center;
+        width: 210px;
+        height: auto;
+    }
+    #img_header1 {
+        position: absolute;
+        background-size: 100%;
+        background-image: url(../media/imagenes/img_header1_d.svg);
+        background-repeat: no-repeat;
+        width: 466px;
+        height: 75px;
+        margin-left: 300px;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 961px) {
+    .header1 {
+        position: relative;
+        width: 960px;
+        height: 100px;
+        z-index: 5;
+    }
+    .diag {
+        position: absolute;
+        height: 100px;
+        width: 960px;
+        -webkit-box-shadow: 0px 5px 5px -2px #888;
+        box-shadow: 0px 5px 5px -2px #888;
+        z-index: 2;
+    }
+    .forma {
+        position: absolute;
+        width: 510px;
+        height: 100px;
+        margin-left: -25px;
+        background-color: #1e1e7c;
+        -webkit-transform: skew(-25deg);
+        -moz-transform: skew(-33deg);
+        -o-transform: skew(-25deg);
+        -ms-transform: skew(-25deg);
+        z-index: -5;
+    }
+    #titulo {
+        font-family: 'CorisandeBold';
+        font-size: 29px;
+        color: #FFFFFF;
+        float: left;
+        margin-top: 28px;
+        margin-left: 9px;
+        text-align: center;
+        width: 384px;
+        height: 60px;
+    }
+    #img_header1 {
+        position: absolute;
+        background-image: url(../media/imagenes/img_header1_d.svg);
+        background-repeat: no-repeat;
+        width: 590px;
+        height: 100px;
+        margin-left: 370px;
+        z-index: 1;
+    }
+}

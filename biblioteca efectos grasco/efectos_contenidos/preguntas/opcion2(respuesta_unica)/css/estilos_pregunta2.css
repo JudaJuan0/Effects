@@ -1,0 +1,101 @@
+.respuestas {
+    display: flex;
+    flex-flow: row wrap;
+}
+.respuestas>div {
+    flex: 1;
+    padding: 0.5rem;
+}
+input[type="radio"] {
+    display: none;
+    &:not(:disabled)~label {
+        cursor: pointer;
+    }
+    &:disabled~label {
+        color: hsla(150, 5%, 75%, 1);
+        border-color: hsla(150, 5%, 75%, 1);
+        box-shadow: none;
+        cursor: not-allowed;
+    }
+}
+label {
+    height: 100%;
+    display: block;
+    background: white;
+    border: 2px solid #24a0e8;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"]:checked+label {
+    background: #24a0e8;
+    color: hsla(215, 0%, 100%, 1);
+    box-shadow: 0px 0px 20px hsla(150, 100%, 50%, 0.75);
+    &::after {
+        color: hsla(215, 5%, 25%, 1);
+        font-family: sans-serif;
+        border: 2px solid hsla(150, 75%, 45%, 1);
+        content: "\f00c";
+        font-size: 24px;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0px 2px 5px -2px hsla(0, 0%, 0%, 0.25);
+    }
+}
+input[type="radio"]#control_05:checked+label {
+    background: hsla(150, 75%, 50%, 1);
+    border-color: hsla(150, 75%, 50%, 1);
+}
+@media only screen and (max-width: 700px) {
+    section {
+        flex-direction: column;
+    }
+}
+.retroalimentacion_principal {
+    background-color: #000000b8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+.retroalimentacion_contenedor {
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    padding: 2em;
+}
+.boton_retroalimentacion {
+    background-color: #50c0f1;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 1em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+.boton_retroalimentacion:hover {
+    background-color: #fff;
+    color: #50c0f1;
+    border: 2px solid #50c0f1;
+}
+.texto_pregunta {
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 2em;
+}

@@ -1,0 +1,14 @@
+html{
+  overflow-x: hidden;
+}
+canvas {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+.index_of{
+  position: relative;
+  z-index: 999;
+}

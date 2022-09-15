@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+.footer2 {
+    margin-top: 2px;
+    background-color: #0053A5;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.contador_boton2 {
+    font-size: 2em;
+    color: #fff;
+    font-family: monospace;
+    margin: 1em;
+}

@@ -1,0 +1,17 @@
+.contenedor_botones1 {
+    text-align: right;
+    padding: 2em;
+}
+.botones1 {
+    background-color: #de0000;
+    color: #f3e7e7;
+    padding: 7px 40px;
+    border-radius: 200px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+}
+.botones1:hover {
+    background-color: #f3e7e7;
+    color: #de0000;
+}
