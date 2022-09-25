@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll animate</title>
+    <link rel="stylesheet" href="css/estilos-base.css">
+    <!-- link libreria externa -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- link local -->
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<!-- cuando se ve desde el inspector el body tiene los atributos de la libreria animada -->
+
+<body>
+    <!-- Se agrega el fondo (la posicion y el color sobre puesto a la imagen) -->
+    <div class="backgrounds overlay">
+        <!-- Se agrega la imagen con posicion Fixed -->
+        <div class="background" style="background-image: url('https://michalsnik.github.io/aos/img/bg.jpg');"></div>
+    </div>
+    <!-- Se dan estilos globales al header -->
+    <header class="hero">
+        <div class="hero-center">
+            <!-- Titulo principal -->
+            <h1 class="hero__logo">
+                Animated scroll effect
+            </h1>
+        </div>
+        <!-- Flecha animacion  @keyframes pulse  -->
+        <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+            Scroll down <br>
+            <!-- Icon arrow dowm -->
+            <i class="chevron bottom"></i>
+        </span>
+    </header>
+
+    <!-- Animaciones Ejes X Y estrictamente -->
+    <section class="divs-animates">
+        <h2>Ejes X Y estrictamente</h2>
+        <div data-aos="fade-up">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-right" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-down" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+    </section>
+    <!-- Sepacion de contenedores de animaciones -->
+    <br><br><br>
+    <!-- Animaciones Ejes X Y combinados (Diagonal) -->
+    <section class="divs-animates">
+        <h2>Ejes X Y combinados (Diagonal)</h2>
+        <div data-aos="fade-up-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-up-left" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-down-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="fade-down-right" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+    </section>
+    <!-- Sepacion de contenedores de animaciones -->
+    <br><br><br>
+    <!-- Animaciones Zoom -->
+    <section class="divs-animates">
+        <h2>Efecto Zoom</h2>
+        <div data-aos="zoom-in">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-out" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-in-up">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-out-up" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+
+        <div data-aos="zoom-in-down">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-out-down" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+
+        <div data-aos="zoom-in-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-out-left" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-in-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+        <div data-aos="zoom-out-right" class="divs-align-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, natus! Obcaecati a pariatur quas provident beatae aliquam incidunt ullam tenetur neque dolores illum quis reiciendis, mollitia perspiciatis harum earum inventore?</p>
+        </div>
+
+    </section>
+
+
+    <!-- Scripts libreria externa-->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- Scripts libreria local-->
+    <script src="js/aos.js"></script>
+    <script>
+        // Se inicializa la libreria de animaciones
+        AOS.init();
+    </script>
+</body>
+
+</html>
